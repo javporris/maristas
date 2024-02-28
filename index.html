@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {text-align: center;}
+        span {cursor: pointer;}
+    </style>
+    <script>
+        $('#content').load(function(){
+            //$('#content').contents().find('.imprimir').hide();
+        });
+        function changeSrc(type, num) {
+            switch (type) {
+                case 're':
+                    url = 'https://www.diputoledo.es/global/20/79/308/deportes_competiciones/02/f/BJ-02/'+num+'/re'
+                    break;
+                case 'ca':
+                    url = 'https://www.diputoledo.es/global/20/79/308/deportes_competiciones/02/f/BJ-02/'+num+'/ca';
+                    break;
+                default:
+                    url = 'https://www.diputoledo.es/global/20/79/308/deportes_competiciones/02/f/BJ-02/8/cla'
+                    break;
+                }
+          document.getElementById('content').src = url;
+        }
+    </script>
+</head>
+<body style="text-align: center;">
+    <p>
+        <span onclick="changeSrc('cla', '1')">Clasificación</span>
+    </p>
+    <p>
+        Resultados: 
+        <span onclick="changeSrc('re', '1')">1</span> 
+        <span onclick="changeSrc('re', '2')">2</span> 
+        <span onclick="changeSrc('re', '3')">3</span> 
+        <span onclick="changeSrc('re', '4')">4</span>  
+        <span onclick="changeSrc('re', '5')">5</span>  
+        <span onclick="changeSrc('re', '6')">6</span>  
+        <span onclick="changeSrc('re', '7')">7</span>  
+        <span onclick="changeSrc('re', '8')">8</span>  
+        <span onclick="changeSrc('re', '9')">9</span>  
+        <span onclick="changeSrc('re', '10')">10</span>  
+        <span onclick="changeSrc('re', '11')">11</span>  
+        <span onclick="changeSrc('re', '12')">12</span>  
+        <span onclick="changeSrc('re', '13')">13</span>  
+        <span onclick="changeSrc('re', '14')">14</span>  
+        <span onclick="changeSrc('re', '15')">15</span>  
+        <span onclick="changeSrc('re', '16')">16</span>  
+        <span onclick="changeSrc('re', '17')">17</span>  
+        <span onclick="changeSrc('re', '18')">18</span> 
+    </p>
+    <p>
+        Calendario: 
+        <span onclick="changeSrc('ca', '1')">1</span> 
+        <span onclick="changeSrc('ca', '2')">2</span> 
+        <span onclick="changeSrc('ca', '3')">3</span> 
+        <span onclick="changeSrc('ca', '4')">4</span> 
+        <span onclick="changeSrc('ca', '5')">5</span> 
+        <span onclick="changeSrc('ca', '6')">6</span> 
+        <span onclick="changeSrc('ca', '7')">7</span> 
+        <span onclick="changeSrc('ca', '8')">8</span> 
+        <span onclick="changeSrc('ca', '9')">9</span> 
+        <span onclick="changeSrc('ca', '10')">10</span> 
+        <span onclick="changeSrc('ca', '11')">11</span> 
+        <span onclick="changeSrc('ca', '12')">12</span> 
+        <span onclick="changeSrc('ca', '13')">13</span> 
+        <span onclick="changeSrc('ca', '14')">14</span> 
+        <span onclick="changeSrc('ca', '15')">15</span> 
+        <span onclick="changeSrc('ca', '16')">16</span> 
+        <span onclick="changeSrc('ca', '17')">17</span> 
+        <span onclick="changeSrc('ca', '18')">18</span>
+        <span onclick="changeSrc('ca', '')">Todo</span>
+    </p>
+    <iframe
+        id="content"
+        title="Inline Frame Example"
+        width="100%"
+        height="400"
+        src="https://www.diputoledo.es/global/20/79/308/deportes_competiciones/02/f/BJ-02/8/cla">
+    </iframe>
+</body>
+</html>
