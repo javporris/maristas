@@ -79,11 +79,36 @@
         src="https://www.diputoledo.es/global/20/79/308/deportes_competiciones/02/f/BJ-02/8/cla">
     </iframe>
     <script>
-        var cssLink = document.createElement("link");
+        /*var cssLink = document.createElement("link");
         cssLink.href = "https://javporris.github.io/maristas/iframestyle.css"; 
         cssLink.rel = "stylesheet"; 
         cssLink.type = "text/css"; 
-        frames['extracted_content'].document.head.appendChild(cssLink);
+        frames['extracted_content'].document.head.appendChild(cssLink);*/
+		window.onload = function() {
+			// Get all iframes on the page
+			var iframes = document.getElementsByTagName('iframe');
+			// Define the class you want to hide
+			var classToHide = 'teamwrap';
+			// Iterate through each iframe
+			for (var i = 0; i < iframes.length; i++) {
+				try {
+					// Access the iframe's content document
+					var iframeDocument = iframes[i].contentDocument || iframes[i].contentWindow.document;
+					// Check if the iframe's document exists and is accessible
+					if (iframeDocument) {
+						// Find all elements with the specified class within the iframe
+						var elements = iframeDocument.getElementsByClassName(classToHide);
+						// Hide each element with the specified class within the iframe
+						for (var j = 0; j < elements.length; j++) {
+							elements[j].style.display = 'none';
+						}
+					}
+				} catch (e) {
+					// Handle any exceptions or security restrictions that may occur
+					console.error('Error accessing iframe content:', e);
+				}
+			}
+		}
     </script>
 </body>
 </html>
