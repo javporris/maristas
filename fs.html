@@ -5,6 +5,19 @@
     <style>
         body {text-align: center; font-family: "Ubuntu", sans-serif;}
         span {cursor: pointer; font-size: 20px; font-weight: bold}
+		iframe {border: none}
+		p, h1 {margin-top: 25px;}
+		.circle {
+			border-radius: 50%;
+			width: 34px;
+			height: 34px;
+			padding: 10px;
+			background: #008b65;
+			/*border: 3px solid #000;*/
+			color: #fff;
+			text-align: center;
+			/*font: 32px Arial, sans-serif;*/
+		}
     </style>
     <script>
         function changeSrc(type, num) {
@@ -29,39 +42,39 @@
         <span onclick="changeSrc('cla', '1')">Clasificación</span>
     </p>
     <p>
-        Calendario:&nbsp;&nbsp;&nbsp;&nbsp;
-        <span onclick="changeSrc('ca', '1')">1</span>&nbsp;&nbsp;&nbsp;&nbsp;
-        <span onclick="changeSrc('ca', '2')">2</span>&nbsp;&nbsp;&nbsp;&nbsp;
-        <span onclick="changeSrc('ca', '3')">3</span>&nbsp;&nbsp;&nbsp;&nbsp;
-        <span onclick="changeSrc('ca', '4')">4</span>&nbsp;&nbsp;&nbsp;&nbsp;
-        <span onclick="changeSrc('ca', '5')">5</span>&nbsp;&nbsp;&nbsp;&nbsp;
-        <span onclick="changeSrc('ca', '6')">6</span>&nbsp;&nbsp;&nbsp;&nbsp;
-        <span onclick="changeSrc('ca', '7')">7</span>&nbsp;&nbsp;&nbsp;&nbsp;
-        <span onclick="changeSrc('ca', '8')">8</span>&nbsp;&nbsp;&nbsp;&nbsp;
-        <span onclick="changeSrc('ca', '9')">9</span>&nbsp;&nbsp;&nbsp;&nbsp;
-        <span onclick="changeSrc('ca', '10')">10</span>&nbsp;&nbsp;&nbsp;&nbsp;
-        <span onclick="changeSrc('ca', '11')">11</span>&nbsp;&nbsp;&nbsp;&nbsp;
-        <span onclick="changeSrc('ca', '12')">12</span>&nbsp;&nbsp;&nbsp;&nbsp;
-        <span onclick="changeSrc('ca', '13')">13</span>&nbsp;&nbsp;&nbsp;&nbsp;
-        <span onclick="changeSrc('ca', '14')">14</span>&nbsp;&nbsp;&nbsp;&nbsp;
-        <span onclick="changeSrc('ca', '')">Todo</span>
+        Calendario:&nbsp;&nbsp;
+        <span class="circle" onclick="changeSrc('ca', '1')">&nbsp;1&nbsp;</span>&nbsp;&nbsp;
+        <span class="circle" onclick="changeSrc('ca', '2')">&nbsp;2&nbsp;</span>&nbsp;&nbsp;
+        <span class="circle" onclick="changeSrc('ca', '3')">&nbsp;3&nbsp;</span>&nbsp;&nbsp;
+        <span class="circle" onclick="changeSrc('ca', '4')">&nbsp;4&nbsp;</span>&nbsp;&nbsp;
+        <span class="circle" onclick="changeSrc('ca', '5')">&nbsp;5&nbsp;</span>&nbsp;&nbsp;
+        <span class="circle" onclick="changeSrc('ca', '6')">&nbsp;6&nbsp;</span>&nbsp;&nbsp;
+        <span class="circle" onclick="changeSrc('ca', '7')">&nbsp;7&nbsp;</span>&nbsp;&nbsp;
+        <span class="circle" onclick="changeSrc('ca', '8')">&nbsp;8&nbsp;</span>&nbsp;&nbsp;
+        <span class="circle" onclick="changeSrc('ca', '9')">&nbsp;9&nbsp;</span>&nbsp;&nbsp;
+        <span class="circle" onclick="changeSrc('ca', '10')">10</span>&nbsp;&nbsp;
+        <span class="circle" onclick="changeSrc('ca', '11')">11</span>&nbsp;&nbsp;
+        <span class="circle" onclick="changeSrc('ca', '12')">12</span>&nbsp;&nbsp;
+        <span class="circle" onclick="changeSrc('ca', '13')">13</span>&nbsp;&nbsp;
+        <span class="circle" onclick="changeSrc('ca', '14')">14</span>&nbsp;&nbsp;
+        <span class="circle" onclick="changeSrc('ca', '')">Todo</span>
     </p>
     <p>
-        Resultados:&nbsp;&nbsp;&nbsp;&nbsp;
-        <span onclick="changeSrc('re', '1')">1</span>&nbsp;&nbsp;&nbsp;&nbsp;
-        <span onclick="changeSrc('re', '2')">2</span>&nbsp;&nbsp;&nbsp;&nbsp;
-        <span onclick="changeSrc('re', '3')">3</span>&nbsp;&nbsp;&nbsp;&nbsp;
-        <span onclick="changeSrc('re', '4')">4</span>&nbsp;&nbsp;&nbsp;&nbsp;
-        <span onclick="changeSrc('re', '5')">5</span>&nbsp;&nbsp;&nbsp;&nbsp;
-        <span onclick="changeSrc('re', '6')">6</span>&nbsp;&nbsp;&nbsp;&nbsp;
-        <span onclick="changeSrc('re', '7')">7</span>&nbsp;&nbsp;&nbsp;&nbsp;
-        <span onclick="changeSrc('re', '8')">8</span>&nbsp;&nbsp;&nbsp;&nbsp;
-        <span onclick="changeSrc('re', '9')">9</span>&nbsp;&nbsp;&nbsp;&nbsp;
-        <span onclick="changeSrc('re', '10')">10</span>&nbsp;&nbsp;&nbsp;&nbsp;
-        <span onclick="changeSrc('re', '11')">11</span>&nbsp;&nbsp;&nbsp;&nbsp;
-        <span onclick="changeSrc('re', '12')">12</span>&nbsp;&nbsp;&nbsp;&nbsp;
-        <span onclick="changeSrc('re', '13')">13</span>&nbsp;&nbsp;&nbsp;&nbsp;
-        <span onclick="changeSrc('re', '14')">14</span>
+        Resultados:&nbsp;&nbsp;
+        <span class="circle" onclick="changeSrc('re', '1')">&nbsp;1&nbsp;</span>&nbsp;&nbsp;
+        <span class="circle" onclick="changeSrc('re', '2')">&nbsp;2&nbsp;</span>&nbsp;&nbsp;
+        <span class="circle" onclick="changeSrc('re', '3')">&nbsp;3&nbsp;</span>&nbsp;&nbsp;
+        <span class="circle" onclick="changeSrc('re', '4')">&nbsp;4&nbsp;</span>&nbsp;&nbsp;
+        <span class="circle" onclick="changeSrc('re', '5')">&nbsp;5&nbsp;</span>&nbsp;&nbsp;
+        <span class="circle" onclick="changeSrc('re', '6')">&nbsp;6&nbsp;</span>&nbsp;&nbsp;
+        <span class="circle" onclick="changeSrc('re', '7')">&nbsp;7&nbsp;</span>&nbsp;&nbsp;
+        <span class="circle" onclick="changeSrc('re', '8')">&nbsp;8&nbsp;</span>&nbsp;&nbsp;
+        <span class="circle" onclick="changeSrc('re', '9')">&nbsp;9&nbsp;</span>&nbsp;&nbsp;
+        <span class="circle" onclick="changeSrc('re', '10')">10</span>&nbsp;&nbsp;
+        <span class="circle" onclick="changeSrc('re', '11')">11</span>&nbsp;&nbsp;
+        <span class="circle" onclick="changeSrc('re', '12')">12</span>&nbsp;&nbsp;
+        <span class="circle" onclick="changeSrc('re', '13')">13</span>&nbsp;&nbsp;
+        <span class="circle" onclick="changeSrc('re', '14')">14</span>&nbsp;&nbsp;
     </p>
     <iframe
         id="extracted_content"
