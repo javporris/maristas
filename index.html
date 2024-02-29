@@ -25,7 +25,7 @@
 </head>
 <body style="text-align: center;">
     <p>
-        <span onclick="changeSrc('cla', '1')">Clasificación</span>
+        <span onclick="changeSrc('cla', '1')">Clasificación *</span>
     </p>
     <p>
         Resultados:&nbsp;&nbsp;&nbsp;&nbsp;
@@ -79,13 +79,13 @@
         src="https://www.diputoledo.es/global/20/79/308/deportes_competiciones/02/f/BJ-02/8/cla">
     </iframe>
     <script>
-        /*var cssLink = document.createElement("link");
-        cssLink.href = "https://javporris.github.io/maristas/iframestyle.css"; 
-        cssLink.rel = "stylesheet"; 
-        cssLink.type = "text/css"; 
-        frames['extracted_content'].document.head.appendChild(cssLink);*/
 		window.onload = function() {
-			// Get all iframes on the page
+			var cssLink = document.createElement("link");
+			cssLink.href = "iframestyle.css";
+			cssLink.rel = "stylesheet"; 
+			cssLink.type = "text/css"; 
+			frames['extracted_content'].document.head.appendChild(cssLink);
+			/*// Get all iframes on the page
 			var iframes = document.getElementsByTagName('iframe');
 			// Define the class you want to hide
 			var classToHide = 'teamwrap';
@@ -107,7 +107,7 @@
 					// Handle any exceptions or security restrictions that may occur
 					console.error('Error accessing iframe content:', e);
 				}
-			}
+			}*/
 		}
     </script>
 </body>
