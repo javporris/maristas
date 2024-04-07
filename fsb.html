@@ -37,7 +37,7 @@
     </script>
 </head>
 <body style="text-align: center;">
-	<h1><a href="index.html">Maristas Benjamín FS</a></h1>
+	<h1><a href="fs.html">Maristas Benjamín FS</a></h1>
     <p>
         <span class="circle" onclick="changeSrc('cla', '1')">Clasificación</span>
     </p>
@@ -90,10 +90,90 @@
         title="Maristas Benjamín FS"
         width="100%"
         height="600"
-        src="https://www.diputoledo.es/global/20/80/309/deportes_competiciones/02/fs/BJ-01/cla">
+        src="">
     </iframe>
     <script>
 		window.onload = function() {
+			const today = new Date();
+			const yyyy = today.getFullYear();
+			let mm = today.getMonth() + 1; // Months start at 0!
+			let dd = today.getDate();
+			if (dd < 10) dd = '0' + dd;
+			if (mm < 10) mm = '0' + mm;
+			const formattedToday = dd + '/' + mm + '/' + yyyy;
+            switch (formattedToday) {
+                case '07/04/2024':
+                    num = '11'
+                    break;
+                case '08/04/2024':
+                case '09/04/2024':
+                case '10/04/2024':
+                case '11/04/2024':
+                case '12/04/2024':
+                case '13/04/2024':
+                case '14/04/2024':
+                    num = '12'
+                    break;
+                case '15/04/2024':
+                case '16/04/2024':
+                case '17/04/2024':
+                case '18/04/2024':
+                case '19/04/2024':
+                case '20/04/2024':
+                case '21/04/2024':
+                    num = '13'
+                    break;
+                case '22/04/2024':
+                case '23/04/2024':
+                case '24/04/2024':
+                case '25/04/2024':
+                case '26/04/2024':
+                case '27/04/2024':
+                case '28/04/2024':
+                    num = '14'
+                    break;
+                case '29/04/2024':
+                case '30/04/2024':
+                case '01/05/2024':
+                case '02/05/2024':
+                case '03/05/2024':
+                case '04/05/2024':
+                case '05/05/2024':
+                    num = '15'
+                    break;
+                case '06/05/2024':
+                case '07/05/2024':
+                case '08/05/2024':
+                case '09/05/2024':
+                case '10/05/2024':
+                case '11/05/2024':
+                case '12/05/2024':
+                    num = '16'
+                    break;
+                case '13/05/2024':
+                case '14/05/2024':
+                case '15/05/2024':
+                case '16/05/2024':
+                case '17/05/2024':
+                case '18/05/2024':
+                case '19/05/2024':
+                    num = '17'
+                    break;
+                case '20/05/2024':
+                case '21/05/2024':
+                case '22/05/2024':
+                case '23/05/2024':
+                case '24/05/2024':
+                case '25/05/2024':
+                case '26/05/2024':
+                    num = '18'
+                    break;
+                default:
+                    num = '1'
+                    break;
+                }
+			var default_url = 'https://www.diputoledo.es/global/20/80/309/deportes_competiciones/02/fs/BJ-01/'+num+'/ca';
+			document.getElementById('extracted_content').src = default_url;
 		}
     </script>
 </body>
